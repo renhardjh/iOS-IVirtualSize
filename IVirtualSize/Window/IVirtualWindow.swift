@@ -7,8 +7,8 @@
 
 import UIKit
 
-final class IVirtualWindow: UIWindow {
-    override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
+public final class IVirtualWindow: UIWindow {
+    public override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
         if motion == .motionShake,
             let topViewController = topViewController,
             !(topViewController is DeviceTypeCollectionViewController) {
