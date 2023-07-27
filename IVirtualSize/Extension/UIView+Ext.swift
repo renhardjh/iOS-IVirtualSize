@@ -99,7 +99,7 @@ extension UIView {
     func addResizer() {
         let slider = IResizerView(viewToResize: self)
         addSubview(slider)
-        slider.place(on: self).pin(.centerX, .centerY, .fixedWidth(200))
+        slider.place(on: self).pin(.centerX, .bottom(to: self.window?.safeAreaLayoutGuide, padding: 100), .fixedWidth(200))
     }
 
     func removeResizer() {

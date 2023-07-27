@@ -22,6 +22,13 @@
 		FA9DA54F2A7275A80075770D /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9DA54E2A7275A80075770D /* UIView+Ext.swift */; };
 		FA9DA5512A7279A00075770D /* ExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9DA5502A7279A00075770D /* ExampleViewController.swift */; };
 		FA9DA5542A72CAE10075770D /* IDeviceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9DA5532A72CAE10075770D /* IDeviceType.swift */; };
+		FA9DA55A2A72EE0F0075770D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9DA5312A726BCE0075770D /* AppDelegate.swift */; };
+		FA9DA55B2A72EE1F0075770D /* IDeviceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9DA5532A72CAE10075770D /* IDeviceType.swift */; };
+		FA9DA55C2A72EE2B0075770D /* IResizerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9DA54C2A7275690075770D /* IResizerView.swift */; };
+		FA9DA55D2A72EE390075770D /* UIWindow+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9DA5472A7273750075770D /* UIWindow+Ext.swift */; };
+		FA9DA55E2A72EE390075770D /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9DA54E2A7275A80075770D /* UIView+Ext.swift */; };
+		FA9DA5612A72EF4B0075770D /* IVirtualWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9DA5442A7273440075770D /* IVirtualWindow.swift */; };
+		FA9DA5632A72F2D10075770D /* DeviceTypeCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9DA5492A72742D0075770D /* DeviceTypeCollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +111,11 @@
 		FA9DA5132A7268970075770D /* IVirtualSize */ = {
 			isa = PBXGroup;
 			children = (
+				FA9DA5622A72F2BC0075770D /* Controller */,
+				FA9DA5552A72DD540075770D /* Window */,
+				FA9DA5462A7273670075770D /* Extension */,
+				FA9DA54B2A7275560075770D /* View */,
+				FA9DA5522A72CAD40075770D /* Model */,
 				FA9DA5142A7268970075770D /* IVirtualSize.h */,
 				FA9DA5152A7268970075770D /* IVirtualSize.docc */,
 			);
@@ -122,7 +134,6 @@
 			isa = PBXGroup;
 			children = (
 				FA9DA5432A7272270075770D /* SharedFiles */,
-				FA9DA5552A72DD540075770D /* Window */,
 				FA9DA5562A72DD610075770D /* Controller */,
 				FA9DA5312A726BCE0075770D /* AppDelegate.swift */,
 				FA9DA5332A726BCE0075770D /* SceneDelegate.swift */,
@@ -133,9 +144,6 @@
 		FA9DA5432A7272270075770D /* SharedFiles */ = {
 			isa = PBXGroup;
 			children = (
-				FA9DA5522A72CAD40075770D /* Model */,
-				FA9DA54B2A7275560075770D /* View */,
-				FA9DA5462A7273670075770D /* Extension */,
 				FA9DA53A2A726BD00075770D /* Assets.xcassets */,
 				FA9DA53F2A726BD00075770D /* Info.plist */,
 				FA9DA53C2A726BD00075770D /* LaunchScreen.storyboard */,
@@ -179,8 +187,15 @@
 		FA9DA5562A72DD610075770D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				FA9DA5492A72742D0075770D /* DeviceTypeCollectionViewController.swift */,
 				FA9DA5502A7279A00075770D /* ExampleViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FA9DA5622A72F2BC0075770D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FA9DA5492A72742D0075770D /* DeviceTypeCollectionViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -324,7 +339,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA9DA5632A72F2D10075770D /* DeviceTypeCollectionViewController.swift in Sources */,
+				FA9DA55A2A72EE0F0075770D /* AppDelegate.swift in Sources */,
+				FA9DA55D2A72EE390075770D /* UIWindow+Ext.swift in Sources */,
+				FA9DA55E2A72EE390075770D /* UIView+Ext.swift in Sources */,
+				FA9DA55C2A72EE2B0075770D /* IResizerView.swift in Sources */,
+				FA9DA55B2A72EE1F0075770D /* IDeviceType.swift in Sources */,
 				FA9DA5162A7268970075770D /* IVirtualSize.docc in Sources */,
+				FA9DA5612A72EF4B0075770D /* IVirtualWindow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -553,6 +575,7 @@
 		FA9DA5292A7268980075770D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
@@ -569,6 +592,7 @@
 		FA9DA52A2A7268980075770D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
